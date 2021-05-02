@@ -36,7 +36,7 @@ html {
   flex-direction: column;
   justify-content: flex-end;
   margin: auto;
-  height: 80px;
+  height: 101.75px;
 }
 .mobile-icons .top-icons {
   display: flex;
@@ -86,21 +86,22 @@ html {
 .mobile-icons .tag-icons {
   display: flex;
   flex-direction: row;
+  gap: 5px;
+  justify-content: center;
 }
 .mobile-icons .tag-card {
-  position: absolute;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: auto;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
   border-radius: 6px;
   background-color: #ffffff;
-  padding: 5px;
+  padding: 5px 10.5px;
   font-size: 14px;
   font-weight: bold;
   gap: 5px;
+  width: auto;
+}
+.mobile-icons .text-card {
+  text-align: center;
 }
 
 /*# sourceMappingURL=search.css.map */
