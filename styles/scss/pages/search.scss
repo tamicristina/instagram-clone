@@ -4,14 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: auto;
-  height: 101.75px;
+  margin-left: 5px;
 
   .top-icons {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    padding: 0px 18px;
+    padding: 8px 18px;
   }
 
   .time-top {
@@ -35,7 +34,6 @@
     background-color: #ebe7e7;
     border-radius: 10px;
     box-sizing: border-box;
-    margin: 6px;
   }
 
   .input-search {
@@ -55,21 +53,23 @@
   .shape-img {
     width: 20px;
     height: 20px;
-    margin: auto;
+    margin-left: 5px;
   }
 
   .tag-icons {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 6px;
   }
   .tag-card {
     display: flex;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     background-color: #ffffff;
-    padding: 5px 10.5px;
+    padding: 8px 10px;
+
     font-size: 14px;
     font-weight: bold;
     gap: 5px;
@@ -78,5 +78,21 @@
 
   .text-card {
     text-align: center;
+  }
+}
+
+.container-img-geral {
+  margin-top: 10px;
+
+  .container-img {
+    display: flex;
+    gap: 1px;
+    justify-content: space-between;
+    margin-top: 1px;
+  }
+
+  .post-img {
+    height: 119.53px;
+    width: 150px;
   }
 }
