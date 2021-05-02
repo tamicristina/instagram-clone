@@ -53,6 +53,11 @@ html {
 .mobile-icons .img-icon {
   padding: 2px;
 }
+.mobile-icons .search-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .mobile-icons .input-box {
   width: 302px;
   background-color: #ebe7e7;
@@ -72,6 +77,30 @@ html {
   width: 13.68px;
   height: 13.68x;
   padding-left: 10px;
+}
+.mobile-icons .shape-img {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+.mobile-icons .tag-icons {
+  display: flex;
+  flex-direction: row;
+}
+.mobile-icons .tag-card {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=search.css.map */

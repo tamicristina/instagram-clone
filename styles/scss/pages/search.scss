@@ -25,6 +25,11 @@
     padding: 2px;
   }
 
+  .search-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .input-box {
     width: 302px;
     background-color: #ebe7e7;
@@ -45,5 +50,31 @@
     width: 13.68px;
     height: 13.68x;
     padding-left: 10px;
+  }
+
+  .shape-img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+
+  .tag-icons {
+    display: flex;
+    flex-direction: row;
+  }
+  .tag-card {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    gap: 5px;
   }
 }
