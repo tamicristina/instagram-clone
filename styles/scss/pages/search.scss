@@ -31,7 +31,7 @@
   }
   .input-box {
     width: 302px;
-    background-color: #ebe7e7;
+    background-color: $background-secondary;
     border-radius: 10px;
     box-sizing: border-box;
   }
@@ -67,9 +67,8 @@
     display: flex;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-    background-color: #ffffff;
+    background-color: $background-primary;
     padding: 8px 10px;
-
     font-size: 14px;
     font-weight: bold;
     gap: 5px;
@@ -96,12 +95,3 @@
     width: 150px;
   }
 }
-
-// .bar-icons {
-//   display: flex;
-//   height: 100px;
-//   width: 100%;
-//   justify-content: space-around;
-//   padding-top: 5px;
-//   background-color: #f2f2f2;
-// }
