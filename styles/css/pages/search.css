@@ -117,13 +117,4 @@ html {
   width: 150px;
 }
 
-footer {
-  height: 39px;
-}
-footer .footer-icons {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 5px;
-}
-
 /*# sourceMappingURL=search.css.map */
