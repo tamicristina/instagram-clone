@@ -35,7 +35,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .mobile-icons .top-icons {
   display: flex;
@@ -79,7 +79,7 @@ html {
 .mobile-icons .shape-img {
   width: 20px;
   height: 20px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .mobile-icons .tag-icons {
   display: flex;
@@ -115,6 +115,15 @@ html {
 .container-img-geral .post-img {
   height: 119.53px;
   width: 150px;
+}
+
+footer {
+  height: 39px;
+}
+footer .footer-icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
 }
 
 /*# sourceMappingURL=search.css.map */
