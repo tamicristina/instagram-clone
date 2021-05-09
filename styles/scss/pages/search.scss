@@ -4,13 +4,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: 10px;
+  box-sizing: border-box;
 
   .top-icons {
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
+
     padding: 8px 18px;
+
     @media (min-width: $breakpoint-tablet) {
       display: none;
     }
@@ -31,27 +32,51 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    .insta-logo {
-      display: none;
-    }
-    @media (max-width: $breakpoint-phone) {
-    }
+    padding: 8px 10px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 
     @media (min-width: $breakpoint-tablet) {
-      .shape-img {
-        display: none;
+      justify-content: space-evenly;
+      padding-top: 12px;
+      width: 100%;
+    }
+
+    .imagem-logo {
+      display: none;
+      @media (min-width: $breakpoint-tablet) {
+        display: flex;
+        width: 103px;
       }
-      .insta-logo {
-        display: unset;
+    }
+
+    .desktop-icons-container {
+      display: none;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: flex;
+      }
+      .desktop-icons-img {
+        margin-left: 20px;
       }
     }
   }
   .input-box {
-    width: 302px;
     background-color: $background-secondary;
-    border-radius: 10px;
     box-sizing: border-box;
+    width: 215px;
+    height: 28px;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      border: 0.5px solid rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: $breakpoint-phone) {
+      border-radius: 10px;
+      width: 302px;
+    }
   }
 
   .input-search {
@@ -61,17 +86,34 @@
     font-size: 16px;
     width: 86.32%;
     outline: none;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 14px;
+      width: 100%;
+    }
   }
-  .input-img {
-    width: 13.68px;
-    height: 13.68x;
-    padding-left: 10px;
+
+  .input-img-container {
+    .input-img {
+      width: 13.68px;
+      height: 13.68x;
+      padding-left: 10px;
+
+      @media (min-width: $breakpoint-tablet) {
+        width: 10px;
+        height: 10x;
+      }
+    }
   }
 
   .shape-img {
     width: 20px;
     height: 20px;
     margin-left: 10px;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
 
   .tag-icons {
@@ -79,7 +121,7 @@
     flex-direction: row;
     gap: 5px;
     justify-content: space-around;
-    margin-top: 6px;
+    padding: 6px 10px;
     @media (min-width: $breakpoint-tablet) {
       display: none;
     }
@@ -102,7 +144,11 @@
 }
 
 .container-img-geral {
-  margin-top: 10px;
+  padding-top: 10px;
+
+  @media (min-width: $breakpoint-tablet) {
+    background-color: $background-primary;
+  }
 
   .container-img {
     display: flex;

@@ -1,17 +1,206 @@
-/* Error: Undefined variable.
- *    ,
- * 38 |     @media (max-width: $breakpoint-phone) {
- *    |                        ^^^^^^^^^^^^^^^^^
- *    '
- *   styles\scss\pages\search.scss 38:24  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 38 \2502      @media (max-width: $breakpoint-phone) {\d\a    \2502                         ^^^^^^^^^^^^^^^^^\a    \2575 \a   styles\\scss\\pages\\search.scss 38:24  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
 }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: Arial;
+}
+
+html {
+  font-size: 10px;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  background-color: #f2f2f2;
+  position: sticky;
+  bottom: 0;
+  padding: 0 26px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .tab-bar {
+    background-color: #fafafa;
+  }
+}
+
+.mobile-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.mobile-icons .top-icons {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 18px;
+}
+@media (min-width: 768px) {
+  .mobile-icons .top-icons {
+    display: none;
+  }
+}
+.mobile-icons .time-top {
+  display: flex;
+  box-sizing: border-box;
+  margin-right: auto;
+  font-size: 15px;
+}
+.mobile-icons .img-icon {
+  padding: 2px;
+}
+.mobile-icons .search-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+  .mobile-icons .search-icons {
+    justify-content: space-evenly;
+    padding-top: 12px;
+    width: 100%;
+  }
+}
+.mobile-icons .search-icons .imagem-logo {
+  display: none;
+}
+@media (min-width: 768px) {
+  .mobile-icons .search-icons .imagem-logo {
+    display: flex;
+    width: 103px;
+  }
+}
+.mobile-icons .search-icons .desktop-icons-container {
+  display: none;
+}
+@media (min-width: 768px) {
+  .mobile-icons .search-icons .desktop-icons-container {
+    display: flex;
+  }
+}
+.mobile-icons .search-icons .desktop-icons-container .desktop-icons-img {
+  margin-left: 20px;
+}
+.mobile-icons .input-box {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  width: 215px;
+  height: 28px;
+}
+@media (min-width: 768px) {
+  .mobile-icons .input-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 479px) {
+  .mobile-icons .input-box {
+    border-radius: 10px;
+    width: 302px;
+  }
+}
+.mobile-icons .input-search {
+  border: none;
+  background: transparent;
+  height: 36px;
+  font-size: 16px;
+  width: 86.32%;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .mobile-icons .input-search {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+.mobile-icons .input-img-container .input-img {
+  width: 13.68px;
+  height: 13.68x;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .mobile-icons .input-img-container .input-img {
+    width: 10px;
+    height: 10x;
+  }
+}
+.mobile-icons .shape-img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  .mobile-icons .shape-img {
+    display: none;
+  }
+}
+.mobile-icons .tag-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-around;
+  padding: 6px 10px;
+}
+@media (min-width: 768px) {
+  .mobile-icons .tag-icons {
+    display: none;
+  }
+}
+.mobile-icons .tag-card {
+  display: flex;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: #fafafa;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  gap: 5px;
+  width: auto;
+}
+.mobile-icons .text-card {
+  text-align: center;
+}
+
+.container-img-geral {
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .container-img-geral {
+    background-color: #fafafa;
+  }
+}
+.container-img-geral .container-img {
+  display: flex;
+  gap: 1px;
+  justify-content: space-between;
+  margin-top: 1px;
+}
+.container-img-geral .post-img {
+  height: 119.53px;
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  .tab-bar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=search.css.map */
