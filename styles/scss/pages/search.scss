@@ -11,6 +11,9 @@
     flex-direction: row;
     box-sizing: border-box;
     padding: 8px 18px;
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
 
   .time-top {
@@ -28,6 +31,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    .insta-logo {
+      display: none;
+    }
+    @media (max-width: $breakpoint-phone) {
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      .shape-img {
+        display: none;
+      }
+      .insta-logo {
+        display: unset;
+      }
+    }
   }
   .input-box {
     width: 302px;
@@ -62,6 +80,9 @@
     gap: 5px;
     justify-content: space-around;
     margin-top: 6px;
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
   .tag-card {
     display: flex;
@@ -93,5 +114,11 @@
   .post-img {
     height: 119.53px;
     width: 150px;
+  }
+}
+
+.tab-bar {
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
   }
 }
